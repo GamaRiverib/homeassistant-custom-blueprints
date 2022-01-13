@@ -47,7 +47,7 @@ trigger:
   - platform: homeassistant
     event: start
   - platform: mqtt
-    topic: '{{ "users/gama/devices/"' ~ topic ~'"/tele/LWT" }}'
+    topic: '{{ "users/gama/devices/" ~ topic ~"/tele/LWT" }}'
     payload: "Online"
 
 action:
