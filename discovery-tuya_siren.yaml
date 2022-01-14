@@ -67,8 +67,6 @@ action:
       topic: "homeassistant/select/{{ macaddr }}/alarmvolume/config"
       retain: true
       payload: "{{ payload_alarmvolume }}"
-    data_template:
-      payload: "{% if trigger.payload== \"high\" %}0{% elif trigger.payload== \"medium\" %}1{% elif trigger.payload== \"low\" %}2{% endif %}"
   - service: mqtt.publish
     data:
       topic: "homeassistant/sensor/{{ macaddr }}/battery/config"
