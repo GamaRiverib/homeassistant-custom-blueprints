@@ -14,6 +14,11 @@ blueprint:
       description: Name of the device to be used in sensor name creation. 
       selector: 
         text:
+    user:
+      name: MQTT username
+      description: MQTT username
+      selector:
+        text:
     topic:
       name: Tasmota MQTT Topic 
       description: "Found in Information tab of the webUI."
